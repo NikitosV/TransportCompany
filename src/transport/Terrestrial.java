@@ -1,10 +1,10 @@
 package transport;
 
-abstract class Terrestrial extends Transport{
+public abstract class Terrestrial extends Transport{
     int countOfWeels;
 
-    public Terrestrial(String name, int countPassengers, int capacityCargo, int speed, int costPerKilometr, int countOfWeels) {
-        super(name, countPassengers, capacityCargo, speed, costPerKilometr);
+    public Terrestrial(String name, int speed, int costPerKilometr, int fuelCapacity, int countOfWeels) {
+        super(name, speed, costPerKilometr, fuelCapacity);
         this.countOfWeels = countOfWeels;
     }
 }
