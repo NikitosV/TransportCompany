@@ -1,6 +1,6 @@
 package transport;
 
-abstract class Transport {
+public abstract class Transport {
     private String name;
     private int speed;
     private int costPerKilometr;
