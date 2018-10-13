@@ -1,12 +1,12 @@
 package transport;
 
 abstract class Transport {
-    String name;
-    int speed;
-    int costPerKilometr;
-    int fuelCapacity;
+    private String name;
+    private int speed;
+    private int costPerKilometr;
+    private int fuelCapacity;
 
-    public Transport(String name, int speed, int costPerKilometr, int fuelCapacity) {
+    Transport(String name, int speed, int costPerKilometr, int fuelCapacity) {
         this.name = name;
         this.speed = speed;
         this.costPerKilometr = costPerKilometr;
