@@ -19,8 +19,8 @@ public class Tanker extends Sea {
     @Override
     public String toString() {
         return "Tanker{" +
-                "cargoCapacity=" + cargoCapacity +
-                ", name='" + name + '\'' +
+                "name='" + name +
+                ", cargoCapacity=" + cargoCapacity +
                 ", speed=" + speed +
                 ", costPerKilometr=" + costPerKilometr +
                 ", fuelCapacity=" + fuelCapacity +

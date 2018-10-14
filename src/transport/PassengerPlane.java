@@ -19,8 +19,8 @@ public class PassengerPlane extends Air {
     @Override
     public String toString() {
         return "PassengerPlane{" +
-                "countPassengers=" + countPassengers +
-                ", name='" + name + '\'' +
+                "name='" + name +
+                ", countPassengers=" + countPassengers +
                 ", speed=" + speed +
                 ", costPerKilometr=" + costPerKilometr +
                 ", fuelCapacity=" + fuelCapacity +
