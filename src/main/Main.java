@@ -2,13 +2,13 @@ package main;
 
 import city.City;
 import company.TransportCompany;
-import transport.air.PassengerPlane;
-import transport.air.SimplePlane;
-import transport.sea.Boat;
-import transport.sea.Tanker;
-import transport.terrestrial.Bus;
-import transport.terrestrial.CargoCar;
-import transport.terrestrial.LightCar;
+import transport.PassengerPlane;
+import transport.SimplePlane;
+import transport.Boat;
+import transport.Tanker;
+import transport.Bus;
+import transport.CargoCar;
+import transport.LightCar;
 
 public class Main {
     public static void main(String[] args) {
@@ -35,8 +35,9 @@ public class Main {
         MyCompany.addCity(city3);
         MyCompany.addCity(city4);
         MyCompany.addCity(city5);
+        System.out.println("Список городов:");
         MyCompany.showListCity();
-        System.out.println("======================== Создаем транспортную компанию =============================");
+
         MyCompany.addTransport(planeBoing);
         MyCompany.addTransport(planeKuku);
         MyCompany.addTransport(tanker);
@@ -44,8 +45,7 @@ public class Main {
         MyCompany.addTransport(car);
         MyCompany.addTransport(cargoCar);
         MyCompany.addTransport(bus);
-
-
-
+        System.out.println("Список транспортов:");
+        MyCompany.showListTransport();
     }
 }

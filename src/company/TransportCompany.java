@@ -59,6 +59,7 @@ public class TransportCompany implements ICompany{
         }
     }
 
+    //TODO make search to Transport
     @Override
     public void findTransport(City from, City to, int aPassengers, int aCargo) {
 

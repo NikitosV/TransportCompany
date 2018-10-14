@@ -1,6 +1,4 @@
-package transport.air;
-
-import transport.Air;
+package transport;
 
 public class PassengerPlane extends Air {
     private int countPassengers;
@@ -16,16 +14,5 @@ public class PassengerPlane extends Air {
 
     public void setCountPassengers(int countPassengers) {
         this.countPassengers = countPassengers;
-    }
-
-    @Override
-    public String toString() {
-        return "Пассажирский самолет{" +
-                "Назание='" + name +
-                ", Скорость=" + speed +
-                ", Стоимость л.км=" + costPerKilometr +
-                ", Запас топлива=" + fuelCapacity +
-                ", Количество пассажиров=" + countPassengers +
-                '}';
     }
 }
