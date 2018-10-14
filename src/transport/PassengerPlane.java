@@ -15,4 +15,15 @@ public class PassengerPlane extends Air {
     public void setCountPassengers(int countPassengers) {
         this.countPassengers = countPassengers;
     }
+
+    @Override
+    public String toString() {
+        return "PassengerPlane{" +
+                "countPassengers=" + countPassengers +
+                ", name='" + name + '\'' +
+                ", speed=" + speed +
+                ", costPerKilometr=" + costPerKilometr +
+                ", fuelCapacity=" + fuelCapacity +
+                '}';
+    }
 }

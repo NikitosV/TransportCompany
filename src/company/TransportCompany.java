@@ -53,8 +53,8 @@ public class TransportCompany implements ICompany{
             System.out.println("Список пуст!");
         }
         else {
-            for (Transport anArrayTransport : arrayTransport) {
-                System.out.println(arrayTransport);
+            for(int i = 0; i < arrayTransport.size(); i++){
+                System.out.println(arrayTransport.get(i));
             }
         }
     }
