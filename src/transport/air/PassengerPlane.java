@@ -9,4 +9,23 @@ public class PassengerPlane extends Air {
         super(name, speed, costPerKilometr, fuelCapacity, countOfEngines, isReactiveEngine);
         this.countPassengers = countPassengers;
     }
+
+    public int getCountPassengers() {
+        return countPassengers;
+    }
+
+    public void setCountPassengers(int countPassengers) {
+        this.countPassengers = countPassengers;
+    }
+
+    @Override
+    public String toString() {
+        return "Пассажирский самолет{" +
+                "Назание='" + name +
+                ", Скорость=" + speed +
+                ", Стоимость л.км=" + costPerKilometr +
+                ", Запас топлива=" + fuelCapacity +
+                ", Количество пассажиров=" + countPassengers +
+                '}';
+    }
 }

@@ -1,10 +1,10 @@
 package transport;
 
 public abstract class Transport {
-    private String name;
-    private int speed;
-    private int costPerKilometr;
-    private int fuelCapacity;
+    protected String name;
+    protected int speed;
+    protected int costPerKilometr;
+    protected int fuelCapacity;
 
     Transport(String name, int speed, int costPerKilometr, int fuelCapacity) {
         this.name = name;
