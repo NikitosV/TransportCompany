@@ -1,8 +1,9 @@
 package transport;
 
 public class Boat extends Sea {
-    public Boat(String name, int speed, int costPerKilometr, int fuelCapacity, int countOfBlade) {
-        super(name, speed, costPerKilometr, fuelCapacity, countOfBlade);
+
+    public Boat(String name, int speed, int costPerKilometr, int fuelCapacity, boolean isCanFly, boolean isCanSwim, int countOfBlade) {
+        super(name, speed, costPerKilometr, fuelCapacity, isCanFly, isCanSwim, countOfBlade);
     }
 
     @Override

@@ -5,12 +5,16 @@ public abstract class Transport {
     int speed;
     int costPerKilometr;
     int fuelCapacity;
+    boolean isCanFly;
+    boolean isCanSwim;
 
-    Transport(String name, int speed, int costPerKilometr, int fuelCapacity) {
+    public Transport(String name, int speed, int costPerKilometr, int fuelCapacity, boolean isCanFly, boolean isCanSwim) {
         this.name = name;
         this.speed = speed;
         this.costPerKilometr = costPerKilometr;
         this.fuelCapacity = fuelCapacity;
+        this.isCanFly = isCanFly;
+        this.isCanSwim = isCanSwim;
     }
 
     public String getName() {
@@ -43,5 +47,21 @@ public abstract class Transport {
 
     public void setFuelCapacity(int fuelCapacity) {
         this.fuelCapacity = fuelCapacity;
+    }
+
+    public boolean isCanFly() {
+        return isCanFly;
+    }
+
+    public void setCanFly(boolean canFly) {
+        isCanFly = canFly;
+    }
+
+    public boolean isCanSwim() {
+        return isCanSwim;
+    }
+
+    public void setCanSwim(boolean canSwim) {
+        isCanSwim = canSwim;
     }
 }

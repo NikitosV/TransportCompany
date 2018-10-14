@@ -3,8 +3,8 @@ package transport;
 public class CargoCar extends Terrestrial {
     private int cargoCapacity;
 
-    public CargoCar(String name, int speed, int costPerKilometr, int fuelCapacity, int countOfWeels, int cargoCapacity) {
-        super(name, speed, costPerKilometr, fuelCapacity, countOfWeels);
+    public CargoCar(String name, int speed, int costPerKilometr, int fuelCapacity, boolean isCanFly, boolean isCanSwim, int countOfWeels, int cargoCapacity) {
+        super(name, speed, costPerKilometr, fuelCapacity, isCanFly, isCanSwim, countOfWeels);
         this.cargoCapacity = cargoCapacity;
     }
 
