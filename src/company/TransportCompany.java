@@ -59,12 +59,12 @@ public class TransportCompany implements ICompany{
         }
     }
 
-    //TODO make search to Transport
+    //TODO make search to Transport correctly
     @Override
     public void findTransport(City from, City to, int aPassengers, int aCargo) {
-        if(from.isHasAirport() == to.isHasAirport()){
-            for (int i = 0; i < arrayTransport.size(); i++){
-                System.out.println(arrayTransport.get(i).toString());
+        for (Transport anArrayTransport : arrayTransport) {
+            if (from.isHasAirport() == to.isHasAirport() && anArrayTransport.getCargoCapacity() > aCargo && anArrayTransport.getCountPassengers() > aPassengers) {
+                System.out.println(anArrayTransport.toString());
             }
         }
     }

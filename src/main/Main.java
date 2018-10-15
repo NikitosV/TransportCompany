@@ -19,7 +19,7 @@ public class Main {
 //        LightCar car = new LightCar("Mazda",220,10,400,false,false,4);
 //        CargoCar cargoCar = new CargoCar("DizelTruck",120,30,700,false, false,8,400);
 //        Bus bus = new Bus("Bus100",90,20,800,false,false,6,128);
-        PassengerPlane boing = new PassengerPlane("Boing747",450,1000,25,200,300,true);
+        PassengerPlane boing = new PassengerPlane("Boing747",450,1000,25,200,300);
 
         System.out.println("======================== Создаем транспортную компанию =============================");
         TransportCompany MyCompany = new TransportCompany("AbudabiLogistic");
@@ -42,6 +42,8 @@ public class Main {
         MyCompany.showListTransport();
         System.out.println("====================================================================================");
         MyCompany.findTransport(city1,city5,100,50);
+        System.out.println();
+        MyCompany.findTransport(city1,city5,10000,5000);
 //        System.out.println();
 //        MyCompany.findTransport(city3,city4,100,50);
     }

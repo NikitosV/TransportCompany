@@ -1,8 +1,9 @@
 package transport;
 
 public class PassengerPlane extends Air{
-    public PassengerPlane(String name, double speed, double fuelCapacity, double costPerKM, int countPassengers, int cargoCapacity, boolean isAirTransport) {
-        super(name, speed, fuelCapacity, costPerKM, countPassengers, cargoCapacity, isAirTransport);
+
+    public PassengerPlane(String name, double speed, double fuelCapacity, double costPerKM, int countPassengers, int cargoCapacity) {
+        super(name, speed, fuelCapacity, costPerKM, countPassengers, cargoCapacity);
     }
 
     @Override
@@ -14,7 +15,6 @@ public class PassengerPlane extends Air{
                 ", costPerKM=" + costPerKM +
                 ", countPassengers=" + countPassengers +
                 ", cargoCapacity=" + cargoCapacity +
-                ", isAirTransport=" + isAirTransport +
                 '}';
     }
 }
