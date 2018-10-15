@@ -1,12 +1,14 @@
 package transport;
 
 public abstract class Air extends Transport {
-    private int countOfEngines;
-    private boolean isReactiveEngine;
+    boolean isAirTransport;
 
-    public Air(String name, int speed, int costPerKilometr, int fuelCapacity, boolean isCanFly, boolean isCanSwim, int countOfEngines, boolean isReactiveEngine) {
-        super(name, speed, costPerKilometr, fuelCapacity, isCanFly, isCanSwim);
-        this.countOfEngines = countOfEngines;
-        this.isReactiveEngine = isReactiveEngine;
+    public Air(String name, double speed, double fuelCapacity, double costPerKM, int countPassengers, int cargoCapacity, boolean isAirTransport) {
+        super(name, speed, fuelCapacity, costPerKM, countPassengers, cargoCapacity);
+        this.isAirTransport = isAirTransport;
+    }
+
+    public boolean isAirTransport() {
+        return isAirTransport;
     }
 }

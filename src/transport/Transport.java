@@ -2,19 +2,19 @@ package transport;
 
 public abstract class Transport {
     String name;
-    int speed;
-    int costPerKilometr;
-    int fuelCapacity;
-    boolean isCanFly;
-    boolean isCanSwim;
+    double speed;
+    double fuelCapacity;
+    double costPerKM;
+    int countPassengers;
+    int cargoCapacity;
 
-    public Transport(String name, int speed, int costPerKilometr, int fuelCapacity, boolean isCanFly, boolean isCanSwim) {
+    public Transport(String name, double speed, double fuelCapacity, double costPerKM, int countPassengers, int cargoCapacity) {
         this.name = name;
         this.speed = speed;
-        this.costPerKilometr = costPerKilometr;
         this.fuelCapacity = fuelCapacity;
-        this.isCanFly = isCanFly;
-        this.isCanSwim = isCanSwim;
+        this.costPerKM = costPerKM;
+        this.countPassengers = countPassengers;
+        this.cargoCapacity = cargoCapacity;
     }
 
     public String getName() {
@@ -25,43 +25,43 @@ public abstract class Transport {
         this.name = name;
     }
 
-    public int getSpeed() {
+    public double getSpeed() {
         return speed;
     }
 
-    public void setSpeed(int speed) {
+    public void setSpeed(double speed) {
         this.speed = speed;
     }
 
-    public int getCostPerKilometr() {
-        return costPerKilometr;
-    }
-
-    public void setCostPerKilometr(int costPerKilometr) {
-        this.costPerKilometr = costPerKilometr;
-    }
-
-    public int getFuelCapacity() {
+    public double getFuelCapacity() {
         return fuelCapacity;
     }
 
-    public void setFuelCapacity(int fuelCapacity) {
+    public void setFuelCapacity(double fuelCapacity) {
         this.fuelCapacity = fuelCapacity;
     }
 
-    public boolean isCanFly() {
-        return isCanFly;
+    public double getCostPerKM() {
+        return costPerKM;
     }
 
-    public void setCanFly(boolean canFly) {
-        isCanFly = canFly;
+    public void setCostPerKM(double costPerKM) {
+        this.costPerKM = costPerKM;
     }
 
-    public boolean isCanSwim() {
-        return isCanSwim;
+    public int getCountPassengers() {
+        return countPassengers;
     }
 
-    public void setCanSwim(boolean canSwim) {
-        isCanSwim = canSwim;
+    public void setCountPassengers(int countPassengers) {
+        this.countPassengers = countPassengers;
+    }
+
+    public int getCargoCapacity() {
+        return cargoCapacity;
+    }
+
+    public void setCargoCapacity(int cargoCapacity) {
+        this.cargoCapacity = cargoCapacity;
     }
 }

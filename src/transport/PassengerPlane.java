@@ -1,19 +1,8 @@
 package transport;
 
-public class PassengerPlane extends Air {
-    private int countPassengers;
-
-    public PassengerPlane(String name, int speed, int costPerKilometr, int fuelCapacity, boolean isCanFly, boolean isCanSwim, int countOfEngines, boolean isReactiveEngine, int countPassengers) {
-        super(name, speed, costPerKilometr, fuelCapacity, isCanFly, isCanSwim, countOfEngines, isReactiveEngine);
-        this.countPassengers = countPassengers;
-    }
-
-    public int getCountPassengers() {
-        return countPassengers;
-    }
-
-    public void setCountPassengers(int countPassengers) {
-        this.countPassengers = countPassengers;
+public class PassengerPlane extends Air{
+    public PassengerPlane(String name, double speed, double fuelCapacity, double costPerKM, int countPassengers, int cargoCapacity, boolean isAirTransport) {
+        super(name, speed, fuelCapacity, costPerKM, countPassengers, cargoCapacity, isAirTransport);
     }
 
     @Override
@@ -21,9 +10,11 @@ public class PassengerPlane extends Air {
         return "PassengerPlane{" +
                 "name='" + name +
                 ", speed=" + speed +
-                ", costPerKilometr=" + costPerKilometr +
                 ", fuelCapacity=" + fuelCapacity +
+                ", costPerKM=" + costPerKM +
                 ", countPassengers=" + countPassengers +
+                ", cargoCapacity=" + cargoCapacity +
+                ", isAirTransport=" + isAirTransport +
                 '}';
     }
 }

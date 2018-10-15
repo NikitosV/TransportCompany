@@ -1,7 +1,6 @@
 package company;
 
 import city.City;
-import transport.Air;
 import transport.Transport;
 
 import java.util.ArrayList;
@@ -10,7 +9,7 @@ import java.util.List;
 public class TransportCompany implements ICompany{
     private String nameOfCompany;
     private List<City> arrayCity;
-    private List<Transport> arrayTransport;
+    List<Transport> arrayTransport;
 
     public TransportCompany(String nameOfCompany) {
         this.nameOfCompany = nameOfCompany;
@@ -63,19 +62,9 @@ public class TransportCompany implements ICompany{
     //TODO make search to Transport
     @Override
     public void findTransport(City from, City to, int aPassengers, int aCargo) {
-        for(int i = 0; i < arrayTransport.size(); i++){
-            if(from.isHasAirport() == true && to.isHasAirport() == true){
-                System.out.println(arrayTransport.get(i));
-                break;
-            }
-            else {
-                if(from.isHasSeaport() == true && to.isHasSeaport() == true){
-                    System.out.println(arrayTransport.get(i));
-                    break;
-                }
-                else {
-                    System.out.println(arrayTransport.get(i));
-                }
+        if(from.isHasAirport() == to.isHasAirport()){
+            for (int i = 0; i < arrayTransport.size(); i++){
+                System.out.println(arrayTransport.get(i).toString());
             }
         }
     }
